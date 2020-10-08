@@ -1,0 +1,31 @@
+{
+  "extends": "../config/tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "dom"
+    ],
+    "jsx": "react",
+    "jsxFactory": "h",
+    "outDir": "./dist",
+    "baseUrl": "../",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "typeRoots": [
+      "../node_modules/@types",
+      "../types"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "../src/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../**/__test__/*",
+    "../types",
+    "../dist"
+  ]
+}
